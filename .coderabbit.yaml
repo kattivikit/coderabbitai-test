@@ -24,6 +24,5 @@ reviews:
     drafts: false
     base_branches:
       - "develop"
-      - "main"
 chat:
   auto_reply: true
