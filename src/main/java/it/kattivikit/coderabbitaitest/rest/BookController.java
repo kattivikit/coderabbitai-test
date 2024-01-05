@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
-public class BookController {
+class BookController {
 
     @Autowired
     private BookService bookService;
