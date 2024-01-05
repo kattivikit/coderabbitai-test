@@ -13,8 +13,12 @@ import java.util.List;
 
 class BookController {
 
+    private final BookService bookService;
+
     @Autowired
-    private BookService bookService;
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
+    }
 
     @GetMapping(value="/books", produces = { MediaType.APPLICATION_JSON_VALUE })
     public Mono<ResponseEntity<List<Book>>> getAllBooks() {
