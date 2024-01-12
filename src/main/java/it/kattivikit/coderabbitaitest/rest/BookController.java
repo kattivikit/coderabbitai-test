@@ -11,6 +11,11 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RestController
+@RequestMapping("/books")
 public class BookController {
 
     @Autowired
